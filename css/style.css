@@ -1,0 +1,96 @@
+:root {
+  --midnightGreen: #014e56;
+  --lightCoral: #f67e7e;
+  --raptureBLue: #79c8c7;
+  --policeBLue: #2c6269;
+  --deepJungleGreen: #2c6269;
+  --sacramentoGreen: #012f34;
+  --darkGreen: #002529;
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/livvic-v14-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Livvic";
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 73px;
+  padding-bottom: 129px;
+  background-color: var(--midnightGreen);
+  border: 1px solid red;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 0px;
+}
+
+.nav-left{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;align-items: center;
+}
+
+.nav .logo{
+    margin-right: 80px;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-link{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.nav-link:hover{
+    color: var(--lightCoral);
+}
+.nav button{
+    width: 153px;
+    height: 48px;
+    border: 2px solid white;
+    border-radius: 24px;
+    background-color: var(--midnightGreen);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    font-family: "Livvic";
+}
+
+.nav button:hover{
+    background-color: white;
+    color: var(--midnightGreen);
+}
